@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Mike Tyson Knockout Spel</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Mike Tyson Knockout Spel</h1>
+        <img src="images/miketyson2.png" alt="tyson" class="tyson-img">    
+        
+        <div class="instructions">
+            <p>Välj ditt knockoutnummer 6, 7, 8 eller 9. Sedan kastar du två tärningar. Om summan av dem motsvarar ditt valda knockoutnummer får du en knock av mike. Försök att samla så många poäng som möjligt innan du blir knockad!</p>
+        </div>
+
+        <div class="knockout-selection">
+            <label>Knockoutnummer:</label>
+            <div class="knockout-buttons">
+                <button class="knockout-btn" data-value="6">6</button>
+                <button class="knockout-btn" data-value="7">7</button>
+                <button class="knockout-btn" data-value="8">8</button>
+                <button class="knockout-btn" data-value="9">9</button>
+            </div>
+            <p class="chosen-knockout"></p>
+        </div>
+
+        <div class="dice-area">
+            <div class="dice">
+                <img src="images/dice1.png" alt="Tärning" class="dice-img">
+            </div>
+            <div class="dice">
+                <img src="images/dice1.png" alt="Tärning" class="dice-img">
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="roll-btn" disabled>Kasta tärningar</button>
+            <button id="restart-btn" disabled>Starta om</button>
+        </div>
+
+        <div class="results">
+            <p><strong>Total summa:</strong> <span id="total-sum">0</span></p>
+            <p class="message"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
