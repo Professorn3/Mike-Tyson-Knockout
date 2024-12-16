@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #292828;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    background: #bdbdbd;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.instructions {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.knockout-selection {
+    margin-bottom: 20px;
+}
+
+.knockout-buttons {
+    margin: 10px 0;
+}
+
+.knockout-btn {
+    background: #444;
+    color: #fff;
+    border: none;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.knockout-btn:hover {
+    background: #333;
+}
+
+.chosen-knockout {
+    font-size: 16px;
+    color: #333;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.dice-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.dice {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice-img {
+    width: 100%;
+    height: auto;
+}
+.tyson-img {
+    width: 40%;
+    height: auto;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#roll-btn, #restart-btn {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+}
+
+#roll-btn:hover:enabled, #restart-btn:hover:enabled {
+    background: #ff2600;
+}
+
+#roll-btn:disabled, #restart-btn:disabled {
+    background: #aaaaaa;
+    cursor: not-allowed;
+}
+s
+.results {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.active-knockout {
+    background: #222 !important;
+    outline: 2px solid #333;
+}
